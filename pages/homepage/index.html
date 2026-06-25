@@ -6,6 +6,9 @@
     <title>KC Fedellaga: Portfolio</title>
     <link rel="stylesheet" href="home-styles.css" />
     <script type="module" src="home.js"></script>
+
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
   </head>
 
   <body>
@@ -43,9 +46,10 @@
 
       <div class="profile-content">
         <h1>Hey there, I'm <span>KC</span></h1>
-        <h3>I'm an <span>Interactive Arts & Technology</span> student!</h3>
+        <h3>and I'm an <span>Interactive Arts & Technology</span> student!</h3>
+        </br>
         <p>
-          I'm in my 3rd year at Simon Fraser University, working towards my BSc
+          I am in my 3rd year at Simon Fraser University, working towards my BSc
           in the SIAT program.
           </br>
           I've accumulated a diverse skillset in design and
@@ -60,7 +64,7 @@
           ranging from game design, web and app development, to interactive art
           installations. I am also an avid gamer, musician, and artist, and love
           to explore potential intersections between interests in my endeavours.
-        </br>
+        </br></br>
         <span><strong>My goal is to create memorable work that pushes the boundaries of my
           imagination!</strong></span>
         </p>
@@ -103,46 +107,113 @@
     </section>
 
     <section class="projects" id="projects">
-      <h1>My Projects</h1>
-      <div class="card-wrapper">
-        <ul class="card-list">
+      <h1><span>My Projects</span></h1>
 
-          <li class="project-card">
-            <a href="#" class="card-link">
-              <img 
-              src="/assets/soy-poster.png" 
-              alt="'Sonder Over Yonder' board game poster'" 
-              class="project-img"
-              >
-              <div class="project-info">
-                <h2 class="project-name">Sonder Over Yonder</h2>
-                <h3>Board Game, 3-5 Players</h3>
-                
-                <div class="project-desc">
-                   <span>Wonder Alone or Wander Together?</span>
-                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                   </p>
+      <div class="project-container swiper">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <li class="project-card swiper-slide">
+              <a href="#" class="card-link">
+                <div class="img-section">
+                  <img 
+                src="/assets/soy-poster.png" 
+                alt="'Sonder Over Yonder' board game poster'" 
+                class="project-img-vert"
+                >
+                </div>
+                <div class="project-info">
+                  <h2 class="project-name">Sonder Over Yonder</h2>
+                  <h3>Board Game, 3-5 Players</h3>
+                  
+                  <div class="project-desc">
+                    <strong>"Wonder Alone or Wander Together?"</strong>
+                    <p>
+                    </br>
+                      In this choice-based, storytelling board game, players adopt a character with a unique career and traits combo then take turns solving everyday encounters using their own skill and judgement, or with help of others. Each decision and player interaction is a contribution to the world around oneself, earning points that progress personal life stories and ultimately determine each ending... 
+                    </p>
+                    </br>
+                    A final project focused on <b>Transformative Fun</b>—games with an underlying theme or purpose meant to strike profound shifts in the thinking and/or feelings of its players afterward. My team's design objective was to blend components of lighthearted, social fun where friends could share a laugh or two, with gameplay mechanics that highlight the influence of connection in all sorts of success, encouraging reflection on how a helping hand can benefit both oneself and those around. 
+                    <p>
+                    </br>
+
+                    </p>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <ul class="tags">
+                      <li class="field">Game Design</li>
+                      <li class="role">System Designer</li>
+                      <li class="role">Writer</li>
+                      <li class="role">Video Editor</li>
+                    </ul>
+
+                    <div class="card-button">
+                      <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+                      <span>View Documentation</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="project-card swiper-slide">
+              <a href="#" class="card-link">
+                <div class="img-section">
+                  <img 
+                src="/assets/pokescope-homepage-screencap.png" 
+                alt="'Pokéscope' Generations by Region Map screencap'" 
+                class="project-img-hori"
+                >
+                <img 
+                src="/assets/pokescope-map-screencap.png" 
+                alt="'Pokéscope' Generations by Region Map screencap'" 
+                class="project-img-hori"
+                >
                 </div>
                 
-                
-                <ul class="tags">
-                  <li class="field">Game Design</li>
-                  <li class="role">System Designer</li>
-                  <li class="role">Writer</li>
-                  <li class="role">Video Editor</li>
-                </ul>
+                <div class="project-info">
+                  <h2 class="project-name">Pokéscope</h2>
+                  <h3>Pokémon Data Exploration Website</h3>
+                  
+                  <div class="project-desc">
+                    <strong>Let's explore the Pokeworld!</strong>
+                    <p>
+                    </br>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                    </br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    <p>
+                    </br>
 
-                <div class="card-button">
-                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
-                  <span>View Documentation</span>
+                    </p>
+                  </div>
+                  
+                  <div class="card-footer">
+                    <ul class="tags">
+                      <li class="field">Web Design</li>
+                      <li class="role">Programmer</li>
+                      <li class="role">Writer</li>
+                      <li class="role">Video Editor</li>
+                    </ul>
+
+                    <div class="card-button">
+                      <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+                      <span>View Documentation</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-
-        </ul>
+              </a>
+            </li>
+          </ul>
+           
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
       </div>
     </section>
+
+    <!-- Swiper JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </body>
 </html>
