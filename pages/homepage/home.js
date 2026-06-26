@@ -1,19 +1,24 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector("header");
-  const observer = new ResizeObserver((entries) => {
-    for (let entry of entries) {
-      {
-        const height = entry.borderBoxSize[0].blockSize;
-        document.documentElement.style.setProperty(
-          "--header-height",
-          `${height}px`,
-        );
-        document.documentElement.style.setProperty(
-          "--bottom-tab-nav-height",
-          `${height * 0.75}px`,
-        );
-      }
-    }
-  });
-  observer.observe(header);
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+  navbar.classList.toggle("active");
+};
+
+new Swiper(".card-wrapper", {
+  loop: true,
+  spaceBetween: 30,
+
+  // Pagination bullets
+  pagination: {
+    el: document.querySelector(".swiper-pagination"),
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: document.querySelector(".swiper-button-next"),
+    prevEl: document.querySelector(".swiper-button-prev"),
+  },
 });

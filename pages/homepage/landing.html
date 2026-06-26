@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KC Fedellaga: Portfolio</title>
+
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="home-styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#profile" class="logo"><span>KC Fedellaga</span></a>
+
+      <nav class="navbar">
+        <a href="#profile">Profile</a>
+        <a href="#projects">Project Showcase</a>
+      </nav>
+
+      <i id="menu-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 -960 960 960"
+          fill="#a20064"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </i>
+    </header>
+
+    <section class="profile" id="profile">
+      <div class="profile-img">
+        <img
+          src="/assets/kacebykace.png"
+          alt=" 'Kace by Kace': an illustration by me, depicting myself as an artist"
+        />
+      </div>
+
+      <div class="profile-content">
+        <h1>Hey there, I'm <span>KC</span></h1>
+        <h3>and I'm an <span>Interactive Arts & Technology</span> student!</h3>
+        </br>
+        <p>
+          I am in my 3rd year at Simon Fraser University, working towards my BSc
+          in the SIAT program.
+          </br>
+          I've accumulated a diverse skillset in design and
+          development, and am passionate about bridging the gap between artistic
+          and technical sides to bring creative visions to life! I am especially
+          interested in immersive experiences that engage audiences through
+          interaction, choice, and storytelling.
+        </p>
+        </br>
+        <p>
+          Throughout my time at SFU, I've gotten to work on projects in areas
+          ranging from game design, web and app development, to interactive art
+          installations. I am also an avid gamer, musician, and artist, and love
+          to explore potential intersections between interests in my endeavours.
+        </br></br>
+        <span><strong>My goal is to create memorable work that pushes the boundaries of my
+          imagination!</strong></span>
+        </p>
+
+        <div class="professional-icons">
+          <a href="#">
+            <i id="dl-resume-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                fill="white"
+              >
+                <path
+                  d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
+                />
+              </svg>
+            </i>
+            <span class="button-text">Resume</span>
+          </a>
+
+          <a href="#">
+            <i id="linkedin-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="white"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                />
+              </svg>
+            </i>
+            <span class="button-text">LinkedIn</span>
+          </a>
+
+          <a href="#">
+            <i>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                height="24px" viewBox="0 -960 960 960" 
+                width="24px" 
+                fill="white"
+              >
+                
+              <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+            </i>
+            <span class="button-text">Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h1><span>My Projects</span></h1>
+
+      <div class="project-container">
+
+        <div class="swiper-row">
+          <div class="swiper-button swiper-button-prev"></div>
+
+          <div class="card-wrapper swiper">
+            <ul class="card-list swiper-wrapper">
+              <li class="project-card swiper-slide">
+                <a href="/pages/projects/non-programming/sonder-over-yonder/soy.html" class="card-link">
+                  <div class="img-section">
+                    <img 
+                  src="/assets/soy-poster.png" 
+                  alt="'Sonder Over Yonder' board game poster'" 
+                  class="project-img-vert"
+                  >
+                  </div>
+                  <div class="project-info">
+                    <h2 class="project-name">Sonder Over Yonder</h2>
+                    <h3>Board Game, 3-5 Players</h3>
+                    
+                    <div class="project-desc">
+                      <strong>"Wonder Alone or Wander Together?"</strong>
+                      <p>
+                      </br>
+                        A choice-based storytelling board game where players take on a unique character persona and take turns solving everyday encounters by themselves, or with the help of others. Every decision and interaction contributes to the world around oneself, earning points that progress towards unlockable life stories and ultimately determine each player's ending...
+                      </p>
+                    </div>
+                    
+                    <div class="card-footer">
+                      <ul class="tags">
+                        <li class="field">Game Design</li>
+                        <li class="role">System Designer</li>
+                        <li class="role">Writer</li>
+                        <li class="role">Video Editor</li>
+                      </ul>
+
+                      <div class="card-button">
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="white"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+                        <span>View Documentation</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="project-card swiper-slide">
+                <a href="/pages/projects/programming/pokescope/pokescope.html" class="card-link">
+                  <div class="img-section">
+                    <img 
+                  src="/assets/pokescope-homepage-screencap.png" 
+                  alt="'Pokéscope' Generations by Region Map screencap'" 
+                  class="project-img-hori"
+                  >
+                  <img 
+                  src="/assets/pokescope-map-screencap.png" 
+                  alt="'Pokéscope' Generations by Region Map screencap'" 
+                  class="project-img-hori"
+                  >
+                  </div>
+                  
+                  <div class="project-info">
+                    <h2 class="project-name">Pokéscope</h2>
+                    <h3>Pokémon Data Exploration Website</h3>
+                    
+                    <div class="project-desc">
+                      <strong>Let's explore the growth of the Pokéworld through data!</strong>
+                      <p>
+                      </br>
+                        An exploration of the Pokémon franchise through its main series games, playerbase, and overall growth and longevity over the past three decades. Targeting both dedicated fans and general gamers/statistic-curious visitors, this website lays out distributions of starter Pokémon, types, releases by region, popularity, and more through interactive visuals!
+                      </p>
+                    </div>
+                    
+                    <div class="card-footer">
+                      <ul class="tags">
+                        <li class="field">Front-End</li>
+                        <li class="role">Programmer</li>
+                        <li class="role">Web Designer</li>
+                        <li class="role">UX Designer</li>
+                      </ul>
+
+                      <div class="card-button">
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="white"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+                        <span>View Documentation</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="swiper-button swiper-button-next"></div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section>
+
+    <!-- Swiper JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <script src="home.js"></script>
+  
+  </body>
+</html>

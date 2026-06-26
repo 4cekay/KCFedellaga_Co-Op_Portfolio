@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Fira Sans", sans-serif;
+}
+
+:root {
+  --bg-color: #fff7f9;
+  --second-bg-color: #fffefe;
+  --text-color: #220061;
+  --main-color: #a20064;
+  --header-height: 6rem;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--text-color);
+  background: linear-gradient(
+    to bottom,
+    rgb(30, 68, 125) 5%,
+    rgb(171, 134, 211)
+  );
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2677f98c;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 12%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 2.5rem 5%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+
+  background: rgba(255, 244, 249, 0.489);
+  backdrop-filter: blur(10px);
+  border-bottom: solid 3px #002b7a;
+
+  .title,
+  .navbar a,
+  span {
+    font-family: "Amaranth", sans-serif;
+  }
+}
+
+.title {
+  font-size: 4rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.title:hover {
+  transform: scale(1.1);
+}
+
+span {
+  background: radial-gradient(rgb(99, 124, 217) 15%, #591586);
+  background-clip: text;
+  color: transparent;
+
+  font-family: "Amaranth", sans-serif;
+}
+
+.navbar a {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: var(--text-color);
+
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+
+  margin: 1rem;
+}
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+/* Info Section */
+
+.proj-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj-info img {
+  height: 60rem;
+}
