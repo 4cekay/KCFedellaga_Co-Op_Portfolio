@@ -241,17 +241,70 @@ span {
 }
 
 .project-container {
+  width: 100%;
+  max-width: 1000px; /* tentative */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.5rem;
+}
+
+.swiper-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  width: 100%;
+}
+
+.card-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  flex-shrink: 0;
+  margin: 0;
+
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.swiper-button {
+  color: white;
+}
+.swiper-pagination {
+  position: static !important;
+  left: auto !important;
+  transform: none !important;
+}
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  opacity: 0.5;
+  background: rgb(255, 255, 255);
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 .card-list .project-card {
   list-style: none;
+  padding: 1rem;
 }
 
 .card-list .project-card .card-link {
+  user-select: none;
+
   display: flex;
   gap: 1rem;
 
-  width: 100rem;
+  width: 100%;
+  height: 58rem;
+
   padding: 18px;
   border: solid 2px transparent;
   border-radius: 12px;
@@ -260,7 +313,7 @@ span {
   color: var(--text-color);
 
   background: rgba(240, 255, 255, 0.854);
-  box-shadow: 0 0 20px rgb(188, 99, 130);
+  box-shadow: 0 0 7px rgb(188, 99, 130);
 
   transition: 0.3s ease-in-out;
 }
@@ -275,17 +328,22 @@ span {
 
   gap: 1.5rem;
   padding: 2rem;
+
+  overflow: hidden;
 }
 
 .project-img-vert {
   max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 
   box-shadow: 2px 2px 7px #360112;
 }
-.card-list .project-card .project-img-hori {
-  width: 100%;
+.project-img-hori {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
+
   box-shadow: 2px 2px 7px #360112;
 }
 
@@ -358,7 +416,7 @@ span {
 
     background: rgba(110, 135, 132, 0.571);
     border-radius: 50%;
-    box-shadow: 0 0 2px rgb(75, 0, 59);
+    box-shadow: 0 0 2px rgb(35, 0, 28);
 
     transition: 0.3s ease-in-out;
   }
@@ -376,7 +434,7 @@ span {
   border-color: var(--main-color);
 
   .arrow {
-    background: rgb(249, 180, 51);
+    background: rgb(255, 166, 0);
   }
 
   span {
