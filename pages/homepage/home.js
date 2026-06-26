@@ -1,3 +1,10 @@
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+  navbar.classList.toggle("active");
+};
+
 new Swiper(".card-wrapper", {
   loop: true,
   spaceBetween: 30,

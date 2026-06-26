@@ -13,6 +13,7 @@
   --second-bg-color: #fffefe;
   --text-color: #5c0039;
   --main-color: #a20064;
+  --header-height: 6rem;
 }
 .inactive {
   visibility: hidden !important;
@@ -25,6 +26,11 @@ html {
 
 body {
   color: var(--text-color);
+  background: linear-gradient(
+    to bottom,
+    rgb(254, 194, 213) 1%,
+    rgb(255, 217, 146)
+  );
 }
 
 ::-webkit-scrollbar {
@@ -49,7 +55,7 @@ section {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 4rem 10%;
+  padding: 4rem 5%;
 
   display: flex;
   justify-content: space-between;
@@ -58,6 +64,7 @@ section {
 
   background: rgba(255, 244, 249, 0.532);
   backdrop-filter: blur(10px);
+  border-bottom: solid 3px #7a004b;
 
   .logo,
   .gradient-button,
@@ -68,8 +75,9 @@ section {
 }
 
 #menu-icon {
-  font-size: 3.5rem;
-  color: var(--main-color);
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #7a004b;
   display: none;
 }
 
@@ -93,7 +101,7 @@ span {
 }
 
 .navbar a {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 500;
   color: var(--text-color);
 
@@ -110,16 +118,12 @@ span {
 /* Profile Section: */
 
 .profile {
+  margin-top: var(--header-height);
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15rem;
-
-  background: linear-gradient(
-    to bottom,
-    rgb(254, 194, 213) 30%,
-    rgb(255, 217, 146)
-  );
 }
 
 .profile-img img {
@@ -220,6 +224,8 @@ span {
 /* Project Showcase Section: */
 
 .projects {
+  padding-bottom: 2.5rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,6 +242,8 @@ span {
 .projects h1 {
   font-family: "Amaranth", sans-serif;
   font-size: 6rem;
+  text-decoration: underline;
+  color: var(--main-color);
 
   text-shadow: 1px 1px 2px #8f002d45;
 }
@@ -316,6 +324,10 @@ span {
   box-shadow: 0 0 7px rgb(188, 99, 130);
 
   transition: 0.3s ease-in-out;
+}
+
+.card-list .project-card .card-link:active {
+  cursor: grabbing;
 }
 
 .img-section {
@@ -439,5 +451,73 @@ span {
 
   span {
     opacity: 1;
+  }
+}
+
+/* Responsiveness: */
+
+@media (max-width: 1285px) {
+  #menu-icon {
+    display: block;
+
+    svg {
+      transition: 0.2s ease;
+    }
+  }
+  #menu-icon:hover {
+    svg {
+      fill: #a2006456;
+    }
+
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1.5rem 2rem;
+
+    width: 25%;
+    background: rgba(190, 136, 160, 0.29);
+
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+
+    display: none;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: var(--text-color);
+  }
+  .navbar.active {
+    display: block;
+  }
+
+  .profile {
+    flex-direction: column;
+    margin: 5rem 0;
+    gap: 5rem;
+  }
+  .profile-content {
+    align-items: center;
+    text-align: center;
+  }
+  .profile-img img {
+    width: 56vw;
+    height: 56vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-link {
+    flex-direction: column;
+  }
+
+  .swiper-row .swiper-button {
+    display: none;
   }
 }
