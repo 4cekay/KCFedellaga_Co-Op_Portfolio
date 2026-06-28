@@ -12,7 +12,9 @@
   --bg-color: rgb(30, 68, 125);
   --second-bg-color: rgb(171, 134, 211);
   --text-color: azure;
-  --main-color: #a20064;
+  --main-color: #112a58;
+  --border-color: #002b7a;
+  --button-border-color: #0b1642;
   --header-height: 6rem;
 }
 
@@ -153,8 +155,9 @@ span {
   display: flex;
 
   padding: 4.5rem 5% 10rem 3.5%;
+  border-top: solid 3px #002b7a;
 
-  background: #002b7a;
+  background: var(--main-color);
 
   height: fit-content;
 }
@@ -172,16 +175,21 @@ span {
   text-align: center;
 }
 .process-container .process-tabs .p-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+
   width: 7.5rem;
   height: 7.5rem;
 
-  padding: 2rem 2rem;
+  border: 0.3rem solid var(--button-border-color);
   border-radius: 5rem;
 
   background: #07204f;
-  text-align: center;
+
   font-size: 2rem;
-  line-height: 3.25rem;
+  line-height: 7.5rem;
   overflow: hidden;
 
   cursor: pointer;
@@ -190,14 +198,29 @@ span {
     visibility: hidden;
   }
 }
+
+.p-tab strong {
+  padding: 2rem 2rem;
+}
 .process-container .process-tabs .p-tab.active {
   width: 30rem;
 
-  background: #f6fdff;
+  background: var(--button-border-color);
   color: #222;
+
+  .tab-no {
+    flex: 1;
+    background: #f6fdff;
+    height: 100%;
+  }
 
   strong {
     visibility: visible;
+    flex: 3;
+
+    padding: 2rem 1rem;
+
+    background: #f6fdff;
   }
 }
 
@@ -234,11 +257,19 @@ span {
 .card-wrapper {
   flex: 1;
   min-width: 0;
+
+  padding: 1rem;
 }
 
 .slide-list .slide-card {
   list-style: none;
   padding: 1rem;
+
+  color: var(--text-color);
+
+  background: #591586;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(207, 142, 165);
 }
 
 .card-contents {
@@ -250,9 +281,9 @@ span {
 
   padding: 18px;
   border: solid 2px transparent;
-  border-radius: 12px;
+  /* border-radius: 12px; */
 
-  background: #591586;
+  /* background: #591586; */
 }
 
 .swiper-button-prev,
