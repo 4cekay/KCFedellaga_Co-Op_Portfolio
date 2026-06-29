@@ -12,7 +12,7 @@
   --bg-color: rgb(30, 68, 125);
   --second-bg-color: rgb(171, 134, 211);
   --text-color: azure;
-  --main-color: #112a58;
+  --main-color: #112a58c1;
   --border-color: #002b7a;
   --button-border-color: #0b1642;
   --header-height: 6rem;
@@ -61,7 +61,7 @@ section {
   align-items: center;
   z-index: 10000;
 
-  background: rgba(255, 244, 249, 0.489);
+  background: rgba(250, 250, 237, 0.769);
   backdrop-filter: blur(10px);
   border-bottom: solid 3px #002b7a;
 
@@ -84,7 +84,7 @@ section {
 }
 
 span {
-  background: radial-gradient(rgb(99, 124, 217) 15%, #591586);
+  background: radial-gradient(rgb(77, 105, 207) 7%, #590b8d);
   background-clip: text;
   color: transparent;
 
@@ -115,6 +115,8 @@ span {
   justify-content: space-evenly;
 
   gap: 15rem;
+
+  background: linear-gradient(to bottom, #121776 15%, var(--second-bg-color));
 }
 .proj-info img {
   height: 60rem;
@@ -131,10 +133,12 @@ span {
 
   gap: 4.5rem;
 }
-.info-bio h3 {
+.info-bio h2 {
   font-size: 4.5rem;
 
   padding-top: 4rem;
+
+  text-shadow: 0 0 20px rgba(173, 173, 161, 0.215);
 }
 .info-bio p {
   font-size: 2.3rem;
@@ -155,7 +159,8 @@ span {
   display: flex;
 
   padding: 4.5rem 5% 10rem 3.5%;
-  border-top: solid 3px #002b7a;
+  border-top: solid 3px var(--border-color);
+  border-bottom: solid 3px var(--border-color);
 
   background: var(--main-color);
 
@@ -267,23 +272,132 @@ span {
 
   color: var(--text-color);
 
-  background: #591586;
+  background: radial-gradient(#6d19a5 15%, #341d8f 80%, #121776);
   border-radius: 12px;
   box-shadow: 0 0 10px rgb(207, 142, 165);
 }
 
 .card-contents {
   display: flex;
+
   gap: 1rem;
 
   width: 100%;
   height: 58rem;
 
-  padding: 18px;
   border: solid 2px transparent;
-  /* border-radius: 12px; */
+}
 
-  /* background: #591586; */
+.tool {
+  background: none;
+  background-clip: none;
+
+  color: var(--text-color);
+
+  font-family: "Fira Sans", sans-serif;
+}
+
+.keyword {
+  background: none;
+  background-clip: none;
+
+  color: var(--text-color);
+
+  font-family: "Fira Sans", sans-serif;
+}
+
+.column-label {
+  font-size: 2rem;
+  text-decoration: underline;
+
+  color: rgb(240, 255, 255);
+  text-shadow: 0 0 7px #eaeaeada;
+
+  align-self: center;
+}
+
+ol {
+  margin-left: 1.5rem;
+
+  color: rgba(191, 189, 189, 0.742);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.quotation {
+  font-size: 1.25rem;
+  font-style: italic;
+
+  color: azure;
+}
+
+.citation {
+  margin-left: 1.75rem;
+
+  font-size: 1rem;
+  font-style: italic;
+
+  color: rgba(240, 255, 255, 0.568);
+}
+
+.content-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  width: auto;
+  max-width: 100%;
+
+  font-size: 1.5rem;
+
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+}
+.content-column-twothirds {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  max-width: 100%;
+
+  font-size: 1.5rem;
+
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+}
+.content-column .img-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+  padding: 1rem;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  overflow: hidden;
+}
+
+.img-vert {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+  box-shadow: 2px 2px 7px #360112;
+}
+.img-hori {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+  box-shadow: 0 0 7px #360112;
 }
 
 .swiper-button-prev,
